@@ -1,0 +1,116 @@
+* { 
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Nunito', sans-serif;                    
+  margin: 0 auto;   
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+
+
+}
+
+
+
+/*****************
+HMAIN HEADER
+******************/
+
+.main_header{
+  background-color: #8585e0;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width:100%;
+  height: auto;
+}
+
+.main_sign {
+  color: white;
+  font-size: 1.4em;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+
+
+.sign1 {
+  font-weight: 900;
+}
+
+.sign2 {
+  font-weight: 100;
+}
+
+.sign {
+  font-weight: 100;
+}
+
+
+/*****************
+SEARCH FIELD
+******************/
+
+.searcher {
+  background-color: white;
+   margin-top: 80px;
+}
+
+
+input[type="text"] {
+    width: 50%;
+    height: auto;
+    font-size: 1.5em;
+    background-color: red;
+    border-radius: 4px;
+    margin: 15px;
+  
+}
+
+/*****************
+SIDE NAV
+******************/
+.side_nav {
+  display: inline-block;
+  list-style: none;
+  background-color:  #5c5c8a;
+  height: 100vh;
+}
+
+.side_navList {
+   list-style: none;
+   margin-top: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
