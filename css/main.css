@@ -5,7 +5,8 @@
 
 body {
   font-family: 'Nunito', sans-serif;                    
-  margin: 0 auto;   
+  margin: 0 auto;  
+/*  background-color: red; */
 }
 
 .clearfix::after {
@@ -27,20 +28,17 @@ HMAIN HEADER
   z-index: 1;
   width:100%;
   height: auto;
-
+  text-align: center;
+  border-bottom: 2px solid orange;
 }
 
-.main_header.header_logo,
-.main_header.header_nav {
-  display: inline-block;
-}
 
 .header_logo {
   color: white;
-  font-size: 1.4em;
-  margin-left: 10px;
-  padding: 10px;
-  float: left;
+  font-size: 2em;
+ /* margin-left: 10px;*/
+ /* padding: 10px;*/
+  /*float: left;*/
 }
 
 .sign1 {
@@ -59,9 +57,9 @@ HMAIN HEADER
 
 .header_nav {
   list-style: none;
-  float: right;
-  margin-right: 20px;
-  margin-top: -1px;
+ /* float: right;*/
+  margin-top: -30px;
+/*  margin-top: -1px;*/
 }
 
 .header_nav li {
@@ -80,7 +78,15 @@ HMAIN HEADER
   top: 20px;
   margin-left: 10px;
   margin-right: 10px;
+  transition: .2s;
+ 
 }
+
+.header_image:hover {
+ transform: scale(1.2, 1.2);
+}
+
+
 
 .bell{
    position: relative;
@@ -98,6 +104,7 @@ HMAIN HEADER
 .name1 {
   color: white;
   margin-bottom: 20px;
+  font-size: 1.3em;
 }
 
 .divider {
@@ -135,16 +142,51 @@ SIDE NAV
   list-style: none;
   background-color:  #5c5c8a;
   height: 100vh;
+  width: 70px;
+  position: fixed;
+  border-right: 2px solid orange;
+}
+
+.side_navList1 {
+ margin-top: 200px;
+  list-style: none;
+   padding: 15px;
 }
 
 .side_navList {
    list-style: none;
-   margin-top: 200px;
+ /*  margin-top: 10px;*/
+   padding: 15px;
+}
+
+.side_navList li {
+ /*  margin-top: 50px; */ 
+   max-width: 100%;
+
 }
 
 
+.highlight:hover {
+  border-left: 2px solid orange;
+  background-color: grey;
+}
 
+/*****************
+WRAPPER - MAIN DIV
 
+******************/
+
+#wrapper {
+ /* background-color: red;*/
+ 
+}
+
+.lorem  {
+  padding-top:  200px;
+  padding-right: 50px;
+  padding-left: 100px
+
+}
 
 
 
