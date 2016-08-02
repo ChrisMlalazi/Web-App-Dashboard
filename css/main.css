@@ -115,25 +115,7 @@ HMAIN HEADER
   position: relative;
   top: 5px;
 }
-/*****************
-SEARCH FIELD
-******************/
 
-.searcher {
-  background-color: white;
-   margin-top: 80px;
-}
-
-
-input[type="text"] {
-    width: 50%;
-    height: auto;
-    font-size: 1.5em;
-    background-color: red;
-    border-radius: 4px;
-    margin: 15px;
-  
-}
 
 /*****************
 SIDE NAV
@@ -180,14 +162,81 @@ WRAPPER - MAIN DIV
  
 }
 
-.lorem  {
-  padding-top:  200px;
+/** Dashboard **/
+
+.dash {
+  padding-top:  180px;
   padding-right: 50px;
   padding-left: 100px
 
 }
 
+/*****************
+SEARCH FIELD
+******************/
 
+.searcher {
+  background-color: grey;
+  padding-left: 100px
+}
+
+
+input[type="text"] {
+    width: 80%;
+    height: auto;
+    font-size: 1.5em;
+    background-color: white;
+    border-radius: 4px;
+    margin: 15px 0;
+  
+}
+
+::-webkit-input-placeholder {
+   color: grey;
+   font-size: .7em;
+   padding-left: 2px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: grey; 
+   font-size: .7em; 
+   padding-left: 2px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: grey; 
+   font-size: .7em; 
+   padding-left: 2px;
+}
+
+:-ms-input-placeholder {  
+   color: grey;  
+   font-size: .7em;
+   padding-left: 2px;
+}
+
+.lorem  {
+
+  padding-right: 50px;
+  padding-left: 100px
+
+}
+
+/* Alert */
+
+.alert {
+  background-color: #8585e0;
+  width: 70%;
+  margin-left:  100px;
+  border-radius: 10px;
+  height: auto;
+}
+
+.alert p {
+  color: white;
+  font-size: .9em;
+  padding: 10px;
+}
 
 
 

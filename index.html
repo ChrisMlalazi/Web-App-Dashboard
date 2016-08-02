@@ -21,87 +21,67 @@
 	           </ul>
 
 	    </header>
-
-	     <!-- <div class="searcher">
-	              <input type="text" placeholder="Search" id="search">
-	      </div> -->
 	    <nav class="side_nav">
-	    <div class="highlight1 highlight">
-
-		    	<a href="#" class="side_navList"><img src="icons/icon-dashboard.svg" alt="dashboard"></a>
-		 </div>
+		    <div class="highlight1 highlight">
+			    	<a href="#" class="side_navList"><img src="icons/icon-dashboard.svg" alt="dashboard"></a>
+			 </div>
 
 		 <div class="highlight">
-		
-		    	<a href="#" class="side_navList"><img src="icons/icon-members.svg" alt="members"></a>
-		
+		    	 <a href="#" class="side_navList"><img src="icons/icon-members.svg" alt="members"></a>
           </div>
 
 		  <div class="highlight">
-
-		    	<a href="#" class="side_navList"><img src="icons/icon-visits.svg" alt="visits">
-		  
+		    	<a href="#" class="side_navList"><img src="icons/icon-visits.svg" alt="visits"></a>		  
 		  </div>
 
-		  <div class="highlight">
-
-	
-		      <a href="#" class="side_navList"><img src="icons/icon-settings.svg" alt="settings"></a>
-	    
+		  <div class="highlight">	
+		       <a href="#" class="side_navList"><img src="icons/icon-settings.svg" alt="settings"></a>	    
 	    </div> <!-- highlight -->
 
 	    </nav> <!-- side_nav -->
 
 	    <div id="wrapper">
-        
-        <p class="lorem">
-        	
-     Lorem ipsum dolor sit amet, eum cu intellegat deterruisset. Qui sumo dignissim accommodare ex. Et summo numquam quo, nec homero laoreet ea. Erat putent usu ut. Te sea unum simul torquatos, invidunt erroribus pri an.
+			    <div class="dash"><h2>Dashboard</h2></div>
+			    <div class="searcher">
+			        <form>
+			    	    <input type="text" id="search" name="search" placeholder="Search">
+			        </form>	
+	             </div> <!-- searcher -->
 
-Sea ea vidit causae concludaturque, est an rebum vitae. Nec affert pertinax te, vel prima consul legimus no. Quo cu hinc alienum dolores, noluisse deseruisse sed in. Augue mollis nec ex, posse accusata vis te, cu numquam comprehensam est. Quis ludus eum ne, sea no corpora patrioque, ut partem legere ridens mel.
+	     <div class="alert"> 	
+                 <p> Alert! Refresh browser for a new update!</p>
+	     </div> <!-- alert -->
 
-Te qui enim illud postulant, nam et putent noluisse constituam, vis tota impedit in. Ut has odio erat iuvaret, fugit ignota doctus at mel. Usu commune tacimates ei. Ea sit ocurreret inciderint, unum accusam suscipiantur te nec, no nam dolorum molestie. Liber tation no mei, vis eu dicit utroque, veri malis ignota eam an. Sed recteque ullamcorper ei.
+        <div id="traffic_chart">
+            <p class="traffic">TRAFFIC</p> 
+		        <div class="traffic_chart1">
+			        <button type="button" id="hour" class="traffic1">Hourly</button>
+			        <button type="button" id="daily" class="traffic1">Daily</button>
+			        <button type="button" id="weekly" class="traffic1">Weekly</button>
+			        <button type="button" id="monthly" class="traffic1">Monthly</button>
+                </div>
 
-Usu alii dico libris id, et euismod corrumpit qui. Purto menandri argumentum vim ad, et cum ceteros fuisset lucilius. Eos dicant exerci ad, per assum persecuti omittantur ad, vel te nobis periculis contentiones. His ea docendi intellegam sadipscing, nam legimus voluptua ne.
+				 <div id="traffic_chart2">
+				    <canvas id="chart2_weekly"></canvas>
+				    <canvas id="chart2_hourly"></canvas>
+				    <canvas id="chart2_daily"></canvas>
+				    <canvas id="chart2_monthly"></canvas>
+				  </div>
+		  </div>
 
-Sea eripuit ancillae no, legere scripta gubergren id est. Vis in aeterno fabellas conclusionemque, te pro eripuit invidunt persequeris. Vero prodesset qui cu, nec vidisse vocibus suscipiantur in, est imperdiet efficiendi ea. Wisi homero comprehensam eum te.
-Lorem ipsum dolor sit amet, eum cu intellegat deterruisset. Qui sumo dignissim accommodare ex. Et summo numquam quo, nec homero laoreet ea. Erat putent usu ut. Te sea unum simul torquatos, invidunt erroribus pri an.
 
-Sea ea vidit causae concludaturque, est an rebum vitae. Nec affert pertinax te, vel prima consul legimus no. Quo cu hinc alienum dolores, noluisse deseruisse sed in. Augue mollis nec ex, posse accusata vis te, cu numquam comprehensam est. Quis ludus eum ne, sea no corpora patrioque, ut partem legere ridens mel.
-
-Te qui enim illud postulant, nam et putent noluisse constituam, vis tota impedit in. Ut has odio erat iuvaret, fugit ignota doctus at mel. Usu commune tacimates ei. Ea sit ocurreret inciderint, unum accusam suscipiantur te nec, no nam dolorum molestie. Liber tation no mei, vis eu dicit utroque, veri malis ignota eam an. Sed recteque ullamcorper ei.
-
-Usu alii dico libris id, et euismod corrumpit qui. Purto menandri argumentum vim ad, et cum ceteros fuisset lucilius. Eos dicant exerci ad, per assum persecuti omittantur ad, vel te nobis periculis contentiones. His ea docendi intellegam sadipscing, nam legimus voluptua ne.
-
-Sea eripuit ancillae no, legere scripta gubergren id est. Vis in aeterno fabellas conclusionemque, te pro eripuit invidunt persequeris. Vero prodesset qui cu, nec vidisse vocibus suscipiantur in, est imperdiet efficiendi ea. Wisi homero comprehensam eum te.
-Lorem ipsum dolor sit amet, eum cu intellegat deterruisset. Qui sumo dignissim accommodare ex. Et summo numquam quo, nec homero laoreet ea. Erat putent usu ut. Te sea unum simul torquatos, invidunt erroribus pri an.
-
-Sea ea vidit causae concludaturque, est an rebum vitae. Nec affert pertinax te, vel prima consul legimus no. Quo cu hinc alienum dolores, noluisse deseruisse sed in. Augue mollis nec ex, posse accusata vis te, cu numquam comprehensam est. Quis ludus eum ne, sea no corpora patrioque, ut partem legere ridens mel.
-
-Te qui enim illud postulant, nam et putent noluisse constituam, vis tota impedit in. Ut has odio erat iuvaret, fugit ignota doctus at mel. Usu commune tacimates ei. Ea sit ocurreret inciderint, unum accusam suscipiantur te nec, no nam dolorum molestie. Liber tation no mei, vis eu dicit utroque, veri malis ignota eam an. Sed recteque ullamcorper ei.
-
-Usu alii dico libris id, et euismod corrumpit qui. Purto menandri argumentum vim ad, et cum ceteros fuisset lucilius. Eos dicant exerci ad, per assum persecuti omittantur ad, vel te nobis periculis contentiones. His ea docendi intellegam sadipscing, nam legimus voluptua ne.
-
-Sea eripuit ancillae no, legere scripta gubergren id est. Vis in aeterno fabellas conclusionemque, te pro eripuit invidunt persequeris. Vero prodesset qui cu, nec vidisse vocibus suscipiantur in, est imperdiet efficiendi ea. Wisi homero comprehensam eum te.
-Lorem ipsum dolor sit amet, eum cu intellegat deterruisset. Qui sumo dignissim accommodare ex. Et summo numquam quo, nec homero laoreet ea. Erat putent usu ut. Te sea unum simul torquatos, invidunt erroribus pri an.
-
-Sea ea vidit causae concludaturque, est an rebum vitae. Nec affert pertinax te, vel prima consul legimus no. Quo cu hinc alienum dolores, noluisse deseruisse sed in. Augue mollis nec ex, posse accusata vis te, cu numquam comprehensam est. Quis ludus eum ne, sea no corpora patrioque, ut partem legere ridens mel.
-
-Te qui enim illud postulant, nam et putent noluisse constituam, vis tota impedit in. Ut has odio erat iuvaret, fugit ignota doctus at mel. Usu commune tacimates ei. Ea sit ocurreret inciderint, unum accusam suscipiantur te nec, no nam dolorum molestie. Liber tation no mei, vis eu dicit utroque, veri malis ignota eam an. Sed recteque ullamcorper ei.
-
-Usu alii dico libris id, et euismod corrumpit qui. Purto menandri argumentum vim ad, et cum ceteros fuisset lucilius. Eos dicant exerci ad, per assum persecuti omittantur ad, vel te nobis periculis contentiones. His ea docendi intellegam sadipscing, nam legimus voluptua ne.
-
-Sea eripuit ancillae no, legere scripta gubergren id est. Vis in aeterno fabellas conclusionemque, te pro eripuit invidunt persequeris. Vero prodesset qui cu, nec vidisse vocibus suscipiantur in, est imperdiet efficiendi ea. Wisi homero comprehensam eum te.
-
-        </p>
-
-	    </div>
+         
+	    </div> <!-- wrapper -->
 
 	        
 
 
     
      
-
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+   <script src="js/app.js"></script>
      </body>
+
+
   </html>
