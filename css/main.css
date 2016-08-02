@@ -158,8 +158,8 @@ WRAPPER - MAIN DIV
 ******************/
 
 #wrapper {
- /* background-color: red;*/
- 
+  background-color: #ffffff;
+  /*margin-left: 100px;*/
 }
 
 /** Dashboard **/
@@ -238,7 +238,21 @@ input[type="text"] {
   padding: 10px;
 }
 
+/*****Traffic****/
 
+.traffic_chart1 {
+  float: right;
+  margin-right: 20px;
+
+}
+.traffic1 {
+  margin-left: 10px;
+}
+
+.traffic1:hover {
+  background-color: grey;
+  border: 1px solid orange;
+}
 
 
 
