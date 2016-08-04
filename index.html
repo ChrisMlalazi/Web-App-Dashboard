@@ -21,23 +21,23 @@
 	           </ul>
 
 	    </header>
-	    
+
 	    <nav class="side_nav">
-			    <div class="highlight1 highlight">
+			      <div class="highlight1 highlight">
 				    	<a href="#" class="side_navList"><img src="icons/icon-dashboard.svg" alt="dashboard"></a>
-				 </div>
+				  </div>
 
-			 <div class="highlight">
-			    	 <a href="#" class="side_navList"><img src="icons/icon-members.svg" alt="members"></a>
-	          </div>
+					  <div class="highlight">
+					    	 <a href="#" class="side_navList"><img src="icons/icon-members.svg" alt="members"></a>
+			          </div>
 
-			  <div class="highlight">
-			    	<a href="#" class="side_navList"><img src="icons/icon-visits.svg" alt="visits"></a>		  
-			  </div>
+					  <div class="highlight">
+					    	<a href="#" class="side_navList"><img src="icons/icon-visits.svg" alt="visits"></a>		  
+					  </div>
 
-			  <div class="highlight">	
-			       <a href="#" class="side_navList"><img src="icons/icon-settings.svg" alt="settings"></a>	    
-		    </div> <!-- highlight -->
+				  <div class="highlight">	
+				       <a href="#" class="side_navList"><img src="icons/icon-settings.svg" alt="settings"></a>	    
+			      </div> <!-- highlight -->
 
 	    </nav> <!-- side_nav -->
 
@@ -54,7 +54,9 @@
 	     </div> <!-- alert -->
 
         <div id="traffic_chart">
-            <p class="traffic">TRAFFIC</p> 
+            <div class="traffic_header">
+            <p>TRAFFIC</p> 
+            </div>
 		        <div class="traffic_chart1">
 			        <button type="button" id="hour" class="traffic1">Hourly</button>
 			        <button type="button" id="daily" class="traffic1">Daily</button>
@@ -62,14 +64,26 @@
 			        <button type="button" id="monthly" class="traffic1">Monthly</button>
                 </div>
 
-				 <div id="traffic_chart2">
-				    <canvas id="chart2_weekly"></canvas>
-				    <canvas id="chart2_hourly"></canvas>
-				    <canvas id="chart2_daily"></canvas>
-				    <canvas id="chart2_monthly"></canvas>
-				  </div>
-		  </div>
+        </div>  <!-- traffic_chart -->
 
+         <div id="traffic_chart2">
+            <div class="traffic_header2">
+                  <p>DAILY TRAFFIC</p> 
+            </div>
+        </div>  <!-- traffic_chart2 -->
+
+        <div id="mobile_users">
+            <div class="mobile">
+                  <p>MOBILE USERS</p> 
+            </div>
+        </div>  <!-- mobile users -->
+
+       <div id="social_users">
+            <div class="social">
+                  <p>SOCIAL</p> 
+            </div>
+        </div>  <!-- social users -->
+       
 
          
 	    </div> <!-- wrapper -->

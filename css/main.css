@@ -18,7 +18,7 @@ body {
 
 
 /*****************
-HMAIN HEADER
+MAIN HEADER
 ******************/
 
 .main_header{
@@ -36,9 +36,7 @@ HMAIN HEADER
 .header_logo {
   color: white;
   font-size: 2em;
- /* margin-left: 10px;*/
- /* padding: 10px;*/
-  /*float: left;*/
+
 }
 
 .sign1 {
@@ -57,14 +55,13 @@ HMAIN HEADER
 
 .header_nav {
   list-style: none;
- /* float: right;*/
   margin-top: -30px;
-/*  margin-top: -1px;*/
+
 }
 
 .header_nav li {
   display: inline-block;
-  /*padding: 20px;*/
+ 
 }
 
 .header_image {
@@ -158,16 +155,14 @@ WRAPPER - MAIN DIV
 ******************/
 
 #wrapper {
-  background-color: #ffffff;
-  /*margin-left: 100px;*/
+  margin-left: 70px;
 }
 
 /** Dashboard **/
 
 .dash {
   padding-top:  180px;
-  padding-right: 50px;
-  padding-left: 100px
+  text-align: center;
 
 }
 
@@ -177,7 +172,8 @@ SEARCH FIELD
 
 .searcher {
   background-color: grey;
-  padding-left: 100px
+  margin: 10px;
+  text-align: center;
 }
 
 
@@ -215,21 +211,14 @@ input[type="text"] {
    padding-left: 2px;
 }
 
-.lorem  {
-
-  padding-right: 50px;
-  padding-left: 100px
-
-}
-
 /* Alert */
 
 .alert {
   background-color: #8585e0;
-  width: 70%;
-  margin-left:  100px;
+  margin: 10px;
   border-radius: 10px;
   height: auto;
+  text-align: center;
 }
 
 .alert p {
@@ -238,31 +227,54 @@ input[type="text"] {
   padding: 10px;
 }
 
-/*****Traffic****/
+/***** TRAFFIC ****/
+
+
+
+.traffic_header {
+  text-align: center;
+}
 
 .traffic_chart1 {
-  float: right;
   margin-right: 20px;
+  text-align: center;
 
 }
 .traffic1 {
   margin-left: 10px;
+  outline: none;
 }
 
 .traffic1:hover {
-  background-color: grey;
+  background-color: #8585e0;
   border: 1px solid orange;
+  border-radius: 10px;
+}
+
+button{
+    border: none;
+    background-color: white;
+  }
+
+
+/**** DAILY TRAFFIC *****/
+
+.traffic_header2 {
+   text-align: center;
 }
 
 
+/**** MOBILE USERS *****/
 
+.mobile {
+   text-align: center;
+}
 
+/**** SOCIAL MEDIA *****/
 
-
-
-
-
-
+.social {
+   text-align: center;
+}
 
 
 
