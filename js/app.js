@@ -118,7 +118,7 @@ var myChartM = new Chart(lineChartMonthly, {
 
     type: 'line',
     data: {
-        labels: ["J", "F", "M", "A", "M", "J", "A","S", "O", "N", "D"],
+        labels: ["J", "F", "M", "A", "M", "J", "J", "A","S", "O", "N", "D"],
         datasets: [{
             lineTension: 0,
             backgroundColor: 'rgba(171, 174, 215, 0.6)',
