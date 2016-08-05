@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">  
   <title>Chris Mlalazi|Project_9</title>
+  <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/main.css" media="screen" type="text/css">
@@ -53,49 +54,40 @@
                  <p> Alert! Refresh browser for a new update!</p>
 	     </div> <!-- alert -->
 
-        <div id="traffic_chart">
-            <div class="traffic_header">
-            <p>TRAFFIC</p> 
-            </div>
-		        <div class="traffic_chart1">
-			        <button type="button" id="hour" class="traffic1">Hourly</button>
-			        <button type="button" id="daily" class="traffic1">Daily</button>
-			        <button type="button" id="weekly" class="traffic1">Weekly</button>
-			        <button type="button" id="monthly" class="traffic1">Monthly</button>
-                </div>
-
-        </div>  <!-- traffic_chart -->
-
-         <div id="traffic_chart2">
-            <div class="traffic_header2">
-                  <p>DAILY TRAFFIC</p> 
-            </div>
-        </div>  <!-- traffic_chart2 -->
-
-        <div id="mobile_users">
-            <div class="mobile">
-                  <p>MOBILE USERS</p> 
-            </div>
-        </div>  <!-- mobile users -->
-
-       <div id="social_users">
-            <div class="social">
-                  <p>SOCIAL</p> 
-            </div>
-        </div>  <!-- social users -->
        
 
-         
-	    </div> <!-- wrapper -->
-
-	        
-
-
-    
      
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-   <script src="js/app.js"></script>
+	 <div class="line-chart-div">
+        <div class="line-chart-titles">
+            <h2 class="traffic-header">Traffic</h2>
+            <nav id="select-graph">
+                <ul id="select-graph-list">
+                    <li>
+                        <h3>Hourly</h3>
+                    </li>
+                    <li>
+                        <h3>Daily</h3>
+                    </li>
+                    <li>
+                        <h3 class="graph-selected">Weekly</h3>
+                    </li>
+                    <li>
+                        <h3>Monthly</h3>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <canvas class="hidden" id="line-chart-hourly"></canvas>
+        <canvas class="hidden" id="line-chart-daily"></canvas>
+        <canvas id="line-chart-weekly"></canvas>
+        <canvas class="hidden" id="line-chart-monthly"></canvas>
+    </div>
+	</div>
+     
+	 <script src="http://code.jquery.com/jquery-1.12.0.min.js" type="text/javascript" charset="utf-8"></script>
+	 <script src="js/chart.min.js"></script>
+     <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+     <script src="js/query.js" type="text/javascript" charset="utf-8"></script>
      </body>
 
 

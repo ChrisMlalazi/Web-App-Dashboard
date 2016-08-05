@@ -5,8 +5,9 @@
 
 body {
   font-family: 'Nunito', sans-serif;                    
-  margin: 0 auto;  
-/*  background-color: red; */
+  margin: 0 auto; 
+
+
 }
 
 .clearfix::after {
@@ -15,6 +16,17 @@ body {
     clear: both;
 }
 
+#canvas1 {
+  text-align: center;
+  background-color: grey;
+  margin: 10px;
+}
+
+#myChart {
+  text-align: center;
+  background-color: white;
+
+}
 
 
 /*****************
@@ -130,9 +142,10 @@ SIDE NAV
 
 
 .side_navList {
-   list-style: none;
- 
+   list-style: none; 
+
 }
+
 
 .highlight1 {
   margin-top: 200px;
@@ -229,6 +242,38 @@ input[type="text"] {
 
 /***** TRAFFIC ****/
 
+#traffic_chart1  {
+
+  text-align: center;
+}
+
+.time {
+  list-style: none;
+}
+
+.list {
+  
+  text-align: center;
+  margin: 20px
+}
+
+
+.list li  a {
+  text-decoration: none;
+  color:black;
+}
+
+.list li {
+  display: inline-block;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.list li:hover {
+  background-color: green;
+}
+
 
 
 .traffic_header {
@@ -236,7 +281,7 @@ input[type="text"] {
 }
 
 .traffic_chart1 {
-  margin-right: 20px;
+ 
   text-align: center;
 
 }
@@ -259,9 +304,15 @@ button{
 
 /**** DAILY TRAFFIC *****/
 
+
+
+
 .traffic_header2 {
    text-align: center;
+
 }
+
+
 
 
 /**** MOBILE USERS *****/
@@ -276,10 +327,24 @@ button{
    text-align: center;
 }
 
+canvas {
+  max-height: 250px;
+  padding: 10px;
+ 
+}
 
 
+  #select-graph-list li, #select-graph-list h3 {
+    display: inline; }
 
+  #select-graph-list h3:hover {
+    cursor: pointer; }
 
+.hidden {
+  display: none;
+  visibility: hidden;
+  height: 0;
+  margin: 0; }
 
 
 
