@@ -6,10 +6,10 @@
 var $lineChartNav = $("#lineChartNav").children("li").children("h3");
 
 
-$lineChartNav.click(function () {
-    $lineChartNav.removeClass("lineChart-selected");
-    $(this).addClass("lineChart-selected");
-});
+// $lineChartNav.click(function () {
+//     $lineChartNav.removeClass("lineChart-selected");
+//     $(this).addClass("lineChart-selected");
+// });
 
 //MANIPULATING BACKGROUND LINE CHARTS
 
