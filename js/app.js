@@ -157,7 +157,7 @@ var myChart = new Chart(barChart, {
         datasets: [
             {
                 label: "[]",
-                data: [5, 20, 40, 65, 60, 50, 70, 99],
+                data: [5, 20, 40, 65, 60, 50, 30],
                 backgroundColor: "#8585e0",
                 borderWidth: 1,
                 borderColor: "grey"
