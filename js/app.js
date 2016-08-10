@@ -1,5 +1,5 @@
 
-// USERR CLICKS ON LINE CHART LABELS TO MAKE ONE APPEAR AFTER THE OTHER
+// USER CLICKS ON LINE CHART LABELS TO MAKE ONE APPEAR AFTER THE OTHER
 
 
 //LINE CHART-1
@@ -20,7 +20,7 @@ var myChartH = new Chart(lineChartHourly, {
             pointBorderWidth: 1,
             pointRadius: 5,
             pointHoverRadius: 8,
-            data: [6, 7, 4, 5, 3, 6, 5]
+            data: [6, 7, 4, 5, 3.5, 6, 5]
         }]
     },
     options: {
