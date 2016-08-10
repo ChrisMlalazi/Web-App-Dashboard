@@ -242,90 +242,11 @@ input[type="text"] {
 
 /***** TRAFFIC ****/
 
-#traffic_chart1  {
-
-  text-align: center;
-}
-
-.time {
-  list-style: none;
-}
-
-.list {
-  
-  text-align: center;
-  margin: 20px
-}
-
-
-.list li  a {
-  text-decoration: none;
-  color:black;
-}
-
-.list li {
-  display: inline-block;
-  background-color: white;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-.list li:hover {
-  background-color: green;
-}
-
-
-
-.traffic_header {
-  text-align: center;
-}
-
-.traffic_chart1 {
- 
-  text-align: center;
-
-}
-.traffic1 {
-  margin-left: 10px;
-  outline: none;
-}
-
-.traffic1:hover {
-  background-color: #8585e0;
-  border: 1px solid orange;
-  border-radius: 10px;
-}
-
-button{
-    border: none;
-    background-color: white;
-  }
-
-
-/**** DAILY TRAFFIC *****/
-
-
-
-
-.traffic_header2 {
-   text-align: center;
+#lineChart {
+  margin-top: -50px;
 
 }
 
-
-
-
-/**** MOBILE USERS *****/
-
-.mobile {
-   text-align: center;
-}
-
-/**** SOCIAL MEDIA *****/
-
-.social {
-   text-align: center;
-}
 
 canvas {
   max-height: 250px;
@@ -333,18 +254,69 @@ canvas {
  
 }
 
+.lineChartLabels {
 
-  #select-graph-list li, #select-graph-list h3 {
-    display: inline; }
+  display: inline-block;
+  width: 100%;
+}
 
-  #select-graph-list h3:hover {
-    cursor: pointer; }
+.lineChartLabels h2 {
+  margin-left: 12px;
+  font-size: 1.2em;
+  font-weight: 400;
+  display: inline-block;
 
-.hidden {
+}
+
+.traffic_header {
+  position: relative;
+  top: 50px;
+}
+
+#lineChartNav {
+  margin-right: 20px;
+  float: right;
+}
+
+#lineChartNav li {
+  display: inline-block;
+  font-size: .8em;
+  font-weight: 100;
+  padding-left:5px;
+  }
+
+#lineChartNav h3 {
+    display: inline; 
+  }
+
+#lineChartNav h3:hover {
+    cursor: pointer; 
+  }
+
+.background {
   display: none;
   visibility: hidden;
-  height: 0;
-  margin: 0; }
+ 
+}
+
+
+
+
+
+
+
+
+
+/**** DAILY TRAFFIC *****/
+
+
+
+
+
+
+/**** MOBILE USERS *****/
+
+
 
 
 

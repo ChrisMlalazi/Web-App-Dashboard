@@ -57,11 +57,11 @@
        
 
      
-	 <div class="line-chart-div">
-        <div class="line-chart-titles">
-            <h2 class="traffic-header">Traffic</h2>
+	 <div id="lineChart">
+        <div class="lineChartLabels">
+            <h2 class="traffic_header">Traffic</h2>
             <nav id="select-graph">
-                <ul id="select-graph-list">
+                <ul id="lineChartNav">
                     <li>
                         <h3>Hourly</h3>
                     </li>
@@ -69,7 +69,7 @@
                         <h3>Daily</h3>
                     </li>
                     <li>
-                        <h3 class="graph-selected">Weekly</h3>
+                        <h3 class="lineChart-selected">Weekly</h3>
                     </li>
                     <li>
                         <h3>Monthly</h3>
@@ -77,10 +77,10 @@
                 </ul>
             </nav>
         </div>
-        <canvas class="hidden" id="line-chart-hourly"></canvas>
-        <canvas class="hidden" id="line-chart-daily"></canvas>
+        <canvas class="background" id="line-chart-hourly"></canvas>
+        <canvas class="background" id="line-chart-daily"></canvas>
         <canvas id="line-chart-weekly"></canvas>
-        <canvas class="hidden" id="line-chart-monthly"></canvas>
+        <canvas class="background" id="line-chart-monthly"></canvas>
     </div>
 	</div>
      

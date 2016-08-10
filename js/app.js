@@ -152,7 +152,43 @@ var myChartM = new Chart(lineChartMonthly, {
 });
 
 
+//DAILY TRAFFIC
 
+// var myDoughnutChart = new Chart(ctx, {
+//     type: 'doughnut',
+//     data: data: {
+//         labels: ["J", "F", "M", "A", "M", "J", "J", "A","S", "O", "N", "D"],
+//         datasets: [{
+//             lineTension: 0,
+//             backgroundColor: 'rgba(171, 174, 215, 0.6)',
+//             borderCapStyle: 'square',
+//             borderColor: "#7479BD",
+//             label: 'Traffic',
+//             pointBorderColor: '#4D4D71',
+//             pointBackgroundColor: '#f1f1f8',
+//             pointBorderWidth: 2,
+//             pointRadius: 6,
+//             pointHoverRadius: 8,
+//             data: [134, 28, 290, 420, 139, 360, 383, 100, 150, 60, 90, 300]
+//         }]
+//     },
+//     options: {
+//         legend: false,
+//         responsive: true,
+//         maintainAspectRatio: false,
+//         scales: {
+//             yAxes: [{
+//     display: true,
+//     ticks: {
+//         beginAtZero: true,
+//         steps:10,
+//         stepValue:5,
+//         max:500
+//     }
+// }]
+//         }
+//     }
+// });
 
 
 

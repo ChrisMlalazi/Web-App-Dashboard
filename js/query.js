@@ -1,24 +1,22 @@
 
 
 
+//USER SELECTS INDIVIDUAL  CHARTS AND MAKE THEM APPEAR AND DISAPPEAR
 
-var $lineChartNav = $("#select-graph-list").children("li").children("h3");
+var $lineChartNav = $("#lineChartNav").children("li").children("h3");
 
-
-
-// line chart nav
 
 $lineChartNav.click(function () {
-    $lineChartNav.removeClass("graph-selected");
-    $(this).addClass("graph-selected");
+    $lineChartNav.removeClass("lineChart-selected");
+    $(this).addClass("lineChart-selected");
 });
 
-// changing the graphs
+//MANIPULATING BACKGROUND LINE CHARTS
 
-$("#select-graph-list li h3").on("click", function () {
-    $(".line-chart-div").children("canvas").addClass("hidden");
+$("#lineChartNav li h3").on("click", function () {
+    $("#lineChart").children("canvas").addClass("background");
     var childIndex = $(this).parent().index();
-    var $canvasDetails = $(".line-chart-div").children("canvas")[childIndex];
+    var $canvasDetails = $("#lineChart").children("canvas")[childIndex];
     $canvasDetails.removeAttribute("class");
 });
 
