@@ -313,6 +313,41 @@ canvas {
 
 
 
+/************ 
+MEDIA QUERIES
+*************/
+
+@media screen and (min-width: 737px) {
+
+  .barDonutCharts  {
+    display: inline-block;
+    text-align: center;
+   
+  }
+
+  .barChartWrapper {
+    width: 50%;
+    float: left;
+    border: 1px solid grey;
+  }
+
+  .donutChartWrapper{
+    width: 50%;
+    float: left;
+     border-top: 1px solid grey;
+     border-right: 1px solid grey;
+     border-bottom: 1px solid grey;
+  }
+
+}
+
+
+
+
+
+
+
+
 
 
 

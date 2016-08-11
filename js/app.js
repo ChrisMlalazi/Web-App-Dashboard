@@ -167,6 +167,8 @@ var myChart = new Chart(barChart, {
         ]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio: false,
     legend: {
         display: false
     },
@@ -179,10 +181,34 @@ var myChart = new Chart(barChart, {
     }
 }
 
+});   
+
+
+var barChart = document.getElementById("donutChart");
+var myChart = new Chart(barChart, {
+    type: "doughnut",
+    data: {
+        labels: ["Phones", "Tablets", "Desktop"],
+        datasets: [
+            {
+                label: "[]",
+                data: [400, 100, 300],
+                backgroundColor: ["#74b1bf", "#81c98f", "#7377bf"],
+                borderWidth: 1,
+                borderColor: "grey",
+            },          
+        ]
+    },
+     options: {    
+              responsive: true,
+              maintainAspectRatio: false,
+        legend: {
+        display: true
+    }
+    },
+    
+
 });
-
-
-
 
 
 
