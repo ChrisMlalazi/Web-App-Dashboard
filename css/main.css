@@ -260,11 +260,14 @@ canvas {
   width: 100%;
 }
 
-.lineChartLabels h2 {
-  margin-left: 12px;
-  font-size: 1.2em;
-  font-weight: 400;
-  display: inline-block;
+.lineChartLabels h2,
+.barChartTitle h2,
+.donutChartTitle h2,
+.social h2     {
+    margin-left: 12px;
+    font-size: 1.2em;
+    font-weight: 400;
+    display: inline-block;
 
 }
 
@@ -304,12 +307,76 @@ canvas {
 
 
 
- 
-
-
-
 
 /**** MOBILE USERS *****/
+
+
+
+
+/**** SOCIAL USERS *****/
+
+.socialBoxes{
+  text-align: center;
+}
+
+.socialList {
+  border: 1px solid grey;
+  width: 90%;
+  height: 40px;
+  height: auto;
+  margin-bottom: 10px;
+  padding-bottom: -40px;
+  display: inline-block;
+  list-style: none;
+ 
+}
+
+/*********
+SVG'S
+**********/
+
+.svgMain {
+    width: 30px;
+    height: 30px;
+    margin-top: 18px;
+
+}
+
+.svgPath {
+  fill: #fff;
+
+}
+
+.twitterBackground {
+  background-color: #8585e0;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: -40px;
+
+}
+
+.twitterHeader {
+  text-align: center;
+  position: relative;
+  bottom: 22px;
+  left: 50px;
+  line-height: .1em;
+}
+
+.socialTitle {
+  font-size: 1.2em;
+  color: #8585e0;
+  font-weight: bold;
+  margin-left: -10px;
+}
+
+.number {
+  font-size: 1.5em;
+}
+
 
 
 
