@@ -263,7 +263,8 @@ canvas {
 .lineChartLabels h2,
 .barChartTitle h2,
 .donutChartTitle h2,
-.social h2     {
+.social h2,
+.newMembers h2     {
     margin-left: 12px;
     font-size: 1.2em;
     font-weight: 400;
@@ -315,6 +316,18 @@ canvas {
 
 /**** SOCIAL USERS *****/
 
+ .donutChartWrapper{
+      border-top: 1px solid grey;
+     border-right: 1px solid grey;
+   
+  }
+
+.socialWrapper {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+
+}
+
 .socialBoxes{
   text-align: center;
 }
@@ -334,6 +347,8 @@ canvas {
 /*********
 SVG'S
 **********/
+
+
 
 .svgMain {
     width: 30px;
@@ -377,6 +392,44 @@ SVG'S
   font-size: 1.5em;
 }
 
+/********
+
+NEW MEMBERS
+**********/
+
+.names {
+  width: 100%;
+}
+.details  {
+  width: 100%;
+ 
+  border-bottom: 1px grey solid;
+  font-size: .7em;
+  margin: 20px;
+}
+
+.firstName {
+   margin: 20px;   
+   font-weight: bold;
+}
+
+.email {
+  margin-left: 20px;
+  position: relative;
+  bottom: 15px;
+  color: #8585e0;
+}
+
+.firstName,
+.email {
+  display: block;
+  line-height: 1em;
+}
+
+.date {
+ /* float: right;*/
+  position: relative;
+  }
 
 
 
