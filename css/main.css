@@ -184,9 +184,7 @@ WRAPPER - MAIN DIV
 SEARCH FIELD
 ******************/
 
-.searcher {
-  background-color: grey;
-  margin: 10px;
+.searcher1 {
   text-align: center;
 }
 
@@ -265,9 +263,10 @@ canvas {
 .barChartTitle h2,
 .donutChartTitle h2,
 .social h2,
-.newMembers h2     {
+.newMembers h2, 
+.messageUser h2{
     margin-left: 12px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 400;
     display: inline-block;
 
@@ -351,7 +350,15 @@ canvas {
   padding-bottom: -40px;
   display: inline-block;
   list-style: none;
+  transition: 0.3s;
  
+}
+
+.socialList:hover {
+  background-color: #afeeee;
+  cursor: pointer;
+  border-radius: 10px;
+  transform: scale(1.05, 1.05);
 }
 
 /*********
@@ -412,15 +419,19 @@ NEW MEMBERS
 }
 .details  {
   width: 100%;
- 
   border-bottom: 1px grey solid;
-  font-size: .7em;
+  font-size: .8em;
   margin: 20px;
+}
+
+.details:hover {
+  background-color: #afeeee;
+  cursor: pointer;
 }
 
 .firstName {
    margin: 20px;   
-   font-weight: bold;
+   font-weight: ;
 }
 
 .email {
@@ -431,15 +442,100 @@ NEW MEMBERS
 }
 
 .firstName,
-.email {
+.email,
+.time {
   display: block;
   line-height: 1em;
 }
 
-.date {
- /* float: right;*/
+.time {
+  margin-left: 20px;
+  position: relative;
+  bottom: 15px;
+  color: #000;
+}
+
+.date,
+.sign{
   position: relative;
   }
+
+.sign {
+   color: #8585e0;
+   right: 10px;
+   font-size: 1.5em;
+
+  }
+
+  /**************
+
+ MESSAGE USER
+
+  **************/
+
+
+
+.searcher2 {
+   
+    text-align: center;
+    display: block;
+}
+
+
+
+
+input[type="text"] {
+    width: 80%;
+    height: auto;
+    font-size: 1.5em;
+    background-color: white;
+    border-radius: 5px;
+    margin: 15px 0; 
+    border: 1px solid grey;
+}
+
+input[type="text"]:hover {
+  background-color: yellow;
+}
+
+textarea[type="text"] {
+    font-size: 1.5em;
+    width: 80%;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-weight: 1em;
+}
+
+input[type="text"]:hover {
+  background-color: #ffefd5;
+}
+
+textarea[type="text"]:hover {
+  background-color: #ffefd5;
+}
+
+#submitMessage {
+    background-color: #8585e0;
+    width: 80%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.sendSpan {
+    font-size: .9em;
+    color: white;
+}
+
+#submitMessage:hover {
+    background-color: orange;
+    border-radius: 20px;
+    border: 1px solid green;
+}
+
+
 
 
 
