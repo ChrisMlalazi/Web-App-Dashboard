@@ -596,6 +596,18 @@ MEDIA QUERIES
 
 @media screen and (min-width: 737px) {
 
+  .side_nav {
+  display: inline-block;
+  list-style: none;
+  background-color:  red;
+  height: 100vh;
+  width: 70px;
+  position: fixed;
+  z-index: 1;
+  border-right: 2px solid orange;
+
+}
+
   .barDonutCharts  {
     display: inline-block;
     text-align: center;
