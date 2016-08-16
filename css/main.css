@@ -269,15 +269,14 @@ canvas {
     margin-left: 12px;
     font-size: 1.1em;
     font-weight: 400;
-    display: inline-block;
-
 }
 
+
 .lineChartLabels h2 {
-  position: relative;
-  top: 45px;
-  font-size: .5em;
-   margin-left: 12px;
+    position: relative;
+    top: 45px;
+    font-size: .5em;
+    margin-left: 12px;
     font-size: .9em;
     font-weight: bold;
     display: inline-block;
@@ -479,16 +478,11 @@ NEW MEMBERS
 
   **************/
 
-
-
 .searcher2 {
    
     text-align: center;
     display: block;
 }
-
-
-
 
 input[type="text"] {
     width: 80%;
@@ -543,7 +537,58 @@ textarea[type="text"]:hover {
 
 
 
+#settingsForm {
+    margin-left: 12px;
+}
 
+#settingsForm h2 {
+    margin-left: 2px;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.sendEmail,
+.setProfile {
+ /*  margin-bottom: 5px;
+*/
+}
+
+.sendEmail p,
+.setProfile p {
+ /* color: red;*/
+  font-size: .9em;
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+
+}
+
+
+.button1,
+.button2 {
+  float: right;
+  margin-right: 40px;
+}
+
+#selector {
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+.buttonsDiv  {
+   margin-bottom: 100px;
+}
+
+button {
+  width: 45%;
+  height: 40px;
+  margin-left: 5px;
+  background-color: #8585e0;
+  border-radius: 10px;
+  padding-top: 10px;
+  border: none;
+ 
+}
 
 /************ 
 MEDIA QUERIES
