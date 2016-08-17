@@ -21,3 +21,14 @@ $("#lineChartNav li h3").on("click", function () {
 });
 
 
+/*** Hamburger Menu*****/
+
+$('.hamburger').on('click', function(e) {
+  // Prevent link from jumping to the top of the page
+  e.preventDefault();
+
+  // If menu is already showing, slide it up. Otherwise, slide it down.
+  $('.highlight').toggleClass('slide-down');
+});
+
+
