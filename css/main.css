@@ -42,7 +42,7 @@ MAIN HEADER
   width:100%;
   height: auto;
   text-align: center;
-  border-bottom: 2px solid orange;
+  border-bottom: 1px solid orange;
 }
 
 
@@ -134,33 +134,24 @@ SIDE NAV
   display: inline-block;
   list-style: none;
   background-color:  #5c5c8a;
-  height: 100vh;
-  width: 70px;
+  margin-top: 190px;
+  height: auto;
+  width: 100%;
   position: fixed;
   z-index: 1;
-  border-right: 2px solid orange;
+  text-align: center;
 
-}
-
-
-.side_navList {
-   list-style: none; 
-
-}
-
-
-.highlight1 {
-  margin-top: 200px;
 }
 
 .highlight{
- width: 100%;
-padding: 15px;
+  display: inline-block;
+  width: 55px;
+  padding: 5px;
+  margin-left: 15px;
 }
 
 
 .highlight:hover {
-  border-left: 2px solid orange;
   background-color: grey;
 }
 
@@ -170,7 +161,7 @@ WRAPPER - MAIN DIV
 ******************/
 
 #wrapper {
-  margin-left: 100px;
+margin: 0 auto;
 }
 
 /** Dashboard **/
@@ -250,7 +241,7 @@ input[type="text"] {
 
 canvas {
   max-height: 250px;
-  padding: 10px;
+ /* padding: 5px;*/
  
 }
 
@@ -260,6 +251,9 @@ canvas {
   width: 100%;
 }
 
+.newMembers {
+  clear: both;
+}
 
 .barChartTitle h2,
 .donutChartTitle h2,
@@ -338,12 +332,12 @@ canvas {
 
 .socialWrapper {
   border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
 
 }
 
 .socialBoxes{
   text-align: center;
+
 }
 
 .socialList {
@@ -356,6 +350,7 @@ canvas {
   display: inline-block;
   list-style: none;
   transition: 0.3s;
+  border-radius: 10px;
  
 }
 
@@ -429,6 +424,10 @@ NEW MEMBERS
   margin: 20px;
 }
 
+td{
+  padding-left: 20px;
+}
+
 .details:hover {
   background-color: #afeeee;
   cursor: pointer;
@@ -467,7 +466,7 @@ NEW MEMBERS
 
 .sign {
    color: #8585e0;
-   right: 10px;
+   right: 15px;
    font-size: 1.5em;
 
   }
@@ -596,37 +595,95 @@ MEDIA QUERIES
 
 @media screen and (min-width: 737px) {
 
-  .side_nav {
-  display: inline-block;
-  list-style: none;
-  background-color:  red;
-  height: 100vh;
-  width: 70px;
-  position: fixed;
-  z-index: 1;
-  border-right: 2px solid orange;
+/*******
+SIDE NAV
+********/
+
+
+
+.side_nav {
+    display: inline-block;
+    list-style: none;
+    background-color: #5c5c8a;
+    height: 100vh;
+    width: 70px;
+    border-right: 2px solid orange;
+     overflow: hidden;
 
 }
 
-  .barDonutCharts  {
+#wrapper {
+  margin-left: 70px;
+
+}
+
+
+.highlight {
+  margin: 20px auto;
+  padding: 15px; 
+  width: 100%;
+
+}
+
+
+.highlight:hover {
+  border-left: 2px solid orange;
+  background-color: grey;
+}
+
+/*******  End of Side Nav  ********/
+
+.barDonutCharts  {
     display: inline-block;
-    text-align: center;
-   
+    text-align: center;   
   }
 
-  .barChartWrapper {
+.barChartWrapper {
     width: 50%;
     float: left;
     border: 1px solid grey;
   }
 
-  .donutChartWrapper{
+.donutChartWrapper{
     width: 50%;
     float: left;
      border-top: 1px solid grey;
      border-right: 1px solid grey;
      border-bottom: 1px solid grey;
   }
+
+.socialBoxes {
+  width: 30%;
+  float: left;
+  display: inline-block;
+}
+
+.newMembersWrapper {
+  color: green;
+  clear: both;
+
+
+
+}
+
+.newMembers {
+  width: 50%;
+  display: inline-block; 
+
+
+}
+
+.newMembers2 {
+  float: right;
+  border-left: 1px solid grey;
+
+}
+
+.date {
+  color: red;
+  padding-right: 20px;
+}
+
 
 }
 

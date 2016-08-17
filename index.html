@@ -23,8 +23,8 @@
 
 	    </header>
 
-	    <nav class="side_nav">
-			      <div class="highlight1 highlight">
+	    <nav class="side_nav side_nav2 clearfix">
+			      <div class="highlight">
 				    	<a href="#" class="side_navList"><img src="icons/icon-dashboard.svg" alt="dashboard"></a>
 				  </div>
 
@@ -284,8 +284,9 @@
 				  </div>			     
 		    </div> <!-- socialBoxes -->
 	     </div> <!--  socialWrapper -->
-          
-          <div class="newMembers"> 
+
+          <div class="newMembersWrapper clearfix">
+           <div class="newMembers"> 
              <h2>New Members</h2>
              <table class="names">
 
@@ -323,9 +324,9 @@
               </table> <!-- names -->
           </div> <!-- newMembers -->
 
-          <div class="newMembers"> 
+          <div class="newMembers newMembers2"> 
              <h2>Recent Activity</h2>
-             <table class="names">
+             <table class="names details2">
 
 	              <tr class="details">
 	                   <th>One</th>
@@ -360,13 +361,15 @@
 	              
               </table> <!-- names -->
           </div> <!-- newMembers -->
+          </div> <!-- newMembersWrapper-->
+
            <div class="messageUser"><h2>MESSAGE USER</h2></div>
           <div class="searcher2">
 
                 
                  <form class="form2">
 	          	     <input type="text" id="search2" name="text" placeholder="Search for User">
-		          	     <textarea type="text" id="comments" placeholder="Message for User"></textarea>
+		          	     <textarea id="comments" placeholder="Message for User"></textarea>
           	                 <p class="messageReminder">Please enter a message</p>
           	          <button type="button" id="submitMessage"><span class="sendSpan">Submit</span></button>
           	     </form>
@@ -395,7 +398,7 @@
 			           </div> <!-- button2 -->	
 	              </div> <!-- setProfile -->
 	              <div class="selectTimeZone">
-	                   <select id="selector" placeholder="Select Timezone">
+	                   <select id="selector">
 		                    <option value="0" disabled selected>Select Timezone</option>
 							<option value="1">(GMT-12:00) International Date Line West</option>
 							<option value="2">(GMT-11:00) Midway Island, Samoa</option>
