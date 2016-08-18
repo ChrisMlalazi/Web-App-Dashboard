@@ -41,19 +41,22 @@ MAIN HEADER
   z-index: 2;
   width:100%;
   height: auto;
-  text-align: center;
   border-bottom: 1px solid orange;
+  display: inline-block;
 }
 
 
 .header_logo {
   color: white;
-  font-size: 2em;
+  font-size: .8em;
+  margin-left: 30px;
+  float: left;
+  margin-top: 40px;
 
 }
 
 .sign1 {
-  font-weight: 900;
+  font-weight: 500;
   color: white;
 }
 
@@ -69,20 +72,22 @@ MAIN HEADER
 
 .header_nav {
   list-style: none;
-  margin-top: -30px;
-
+  float: right;
+  margin-right: 10px;
+  padding: 0;
 }
 
 .header_nav li {
-  display: inline-block;
- 
+  display: inline-block;  
 }
+
+
 
 .header_image {
   background: url("../img/profile1.jpg") no-repeat center;
   background-size: cover;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   border: 1px solid white;
   position: relative;
@@ -104,6 +109,7 @@ MAIN HEADER
    top: 10px;
    right: 5px;
    width: 30px;
+   font-size: .8em;
 }
 
 .greenDot img {
@@ -116,11 +122,11 @@ MAIN HEADER
 .name1 {
   color: white;
   margin-bottom: 20px;
-  font-size: 1.3em;
+  font-size: .8em;
 }
 
 .divider {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 100;
   color: black;
   position: relative;
@@ -135,7 +141,7 @@ SIDE NAV
   display: inline-block;
   list-style: none;
   background-color:  #5c5c8a;
-  margin-top: 190px;
+  margin-top: 105px;
   height: auto;
   width: 100%;
   position: fixed;
@@ -146,8 +152,8 @@ SIDE NAV
 
 .highlight{
   display: inline-block;
-  width: 55px;
-  padding: 5px;
+  width: 50px;
+  padding: 10px;
   margin-left: 15px;
 }
 
@@ -598,6 +604,30 @@ MEDIA QUERIES
 
 @media screen and (min-width: 737px) {
 
+/*********
+
+DASHBOARD
+*********/
+
+.dashboardWrapper  {
+  margin-top: 100px;
+}
+
+.dash {
+  float: left;
+  margin-top: -175px;
+  margin-left: 12px;
+  margin-right: 40px;
+}
+
+.searcher1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border: 1px solid grey;
+}
+
+
 /*******
 SIDE NAV
 ********/
@@ -611,7 +641,8 @@ SIDE NAV
     height: 100vh;
     width: 70px;
     border-right: 2px solid orange;
-     overflow: hidden;
+    overflow: hidden;
+    margin-top: -10px;
 
 }
 
