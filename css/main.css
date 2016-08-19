@@ -17,6 +17,14 @@ body {
   padding: 10px;
   clear: both;
   background-color: grey;
+  font-size: .9em;
+  opacity: .9;
+}
+
+
+.icons:hover{
+   opacity: 1;
+
 }
 
 
@@ -117,11 +125,18 @@ MAIN HEADER
    font-size: .8em;
 }
 
-.greenDot img {
+.greenDot{
   width: 7px;
   position: relative;
   bottom: 20px;
   right: 5px;
+  border-radius: 100%;
+
+}
+
+.actualDot{
+  color: white;
+
 
 }
 .name1 {
@@ -227,6 +242,12 @@ input[type="text"] {
    padding-left: 2px;
 }
 
+.fa-search {
+  color: #5c5c8a;;
+  position: relative;
+  right: 25px;
+}
+
 /* Alert */
 
 .alert {
@@ -234,7 +255,25 @@ input[type="text"] {
   margin: 10px;
   border-radius: 10px;
   height: auto;
-  text-align: center;
+  padding: 0;
+
+}
+
+
+.closebtn {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
 }
 
 .alert p {

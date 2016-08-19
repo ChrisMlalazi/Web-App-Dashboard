@@ -15,7 +15,9 @@
 	          <h1 class="header_logo"><a class="sign"><span class="sign1">My</span><span class="sign2">App</span><span></span>&trade;</a> </h1>
 	           <ul class="header_nav">
 	           	    <li class="bell"><img src="icons/icon-bell.svg" alt="bell_icon"></li>
-	           	     <li class="greenDot"><a href="http://www.clker.com/cliparts/R/d/z/v/H/1/neon-green-dot-th.png"><img src='http://www.clker.com/cliparts/R/d/z/v/H/1/neon-green-dot-th.png' alt='Neon Green Dot clip art'/></a></li>
+	           	     <li class="greenDot"><span><svg class="dot" height="10" width="10">
+					  <circle cx="4" cy="5" r="4" stroke="#83C891" stroke-width="1" fill="#83C891" />
+					</svg></span></li>
 	           	    <li class="divider">|</li>
 	           	    <li class="header_image"></li>
 	           	    <li class="name1">Christopher Mlalazi</li>
@@ -47,12 +49,24 @@
 			    <div class="dash"><h2>Dashboard</h2></div>
 			    <div class="searcher1">
 			        <form class="form1">
-			    	    <input type="text" id="search" name="search" placeholder="Search">
+			    	    <input type="text" id="search" name="search" placeholder="Search"><span class="fa fa-search"></span>
 			        </form>	
 	             </div> <!-- searcher -->
                  </div>
-	     <div class="alert"> 	
-                 <p> Alert! Refresh browser for a new update!</p>
+	     <div id="alertWrap"> 
+	            <div class="alert">
+				  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+						 <p class="para"><strong>Alert! </strong> Dave likes your post: 'Techdegree rocks!'.</p>
+				</div>
+                 <div class="alert">
+					  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+					  <p class="para"><strong>Alert! </strong>Litshe poked you.</p>
+					</div>                 
+					<div class="alert">
+						  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+						 <p class="para"><strong>Alert! </strong> Congrats you are now in Project 9.</p>
+					</div>
+
 	     </div> 
 
        
@@ -519,7 +533,7 @@
           </div> <!-- settingsWrapper -->
 	
 	</div>  <!-- wrapper -->
-	<div class="icons">Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div>
+	<div class="icons">Icons made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div>
      
 	 <script src="http://code.jquery.com/jquery-1.12.0.min.js" type="text/javascript" charset="utf-8"></script>
 	 <script src="js/chart.min.js"></script>
