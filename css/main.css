@@ -9,6 +9,53 @@ body {
   background-color: #f0ffff;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+
+.bell {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+ 
+}
+
+
+.bell{
+  display: block;
+  padding-right: 0 !important; /* important overrides media queries */
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.toggled{
+    padding: 1px;
+    text-align: center;
+    font-size: .9em;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s linear;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .slide-down {
+    height: 120px;
+    background-color: #f0ffff;
+    z-index: 1;
+    margin-bottom: 20px;
+  }
 
 .icons {
   text-align: center;
@@ -134,11 +181,6 @@ MAIN HEADER
 
 }
 
-.actualDot{
-  color: white;
-
-
-}
 .name1 {
   color: white;
   margin-bottom: 20px;
@@ -252,11 +294,16 @@ input[type="text"] {
 
 .alert {
   background-color: #8585e0;
-  margin: 10px;
+  margin: 0 auto;
   border-radius: 10px;
   height: auto;
   padding: 0;
+  width: 90%;
+  font-size: .8em;
+}
 
+.green {   
+background-color: rgba(0,0,0,0.6);
 }
 
 
@@ -624,10 +671,8 @@ textarea:hover {
     font-weight: 400;
 }
 
-.sendEmail,
 .setProfile {
- /*  margin-bottom: 5px;
-*/
+   margin-bottom: 15px;
 }
 
 .sendEmail p,
@@ -648,12 +693,13 @@ textarea:hover {
 }
 
 #selector {
-  width: 90%;
+  width: 95%;
   margin-bottom: 40px;
 }
 
 .buttonsDiv  {
    margin-bottom: 100px;
+   margin-top: -15px;
 }
 
 button {
@@ -673,6 +719,100 @@ button {
 
 .cancelButton:hover {
   background-color: orange;
+}
+
+/*********
+
+FLIP SWITCH
+***********/
+
+.onoffswitch,
+.onoffswitch2 {
+  float: right;
+  margin-right: 20px;
+
+}
+
+.onoffswitch,
+.onoffswitch2 {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch-checkbox,
+.onoffswitch-checkbox2 {
+    display: none;
+}
+.onoffswitch-label,
+.onoffswitch-label2 {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner,
+.onoffswitch-inner2 {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner2:before, .onoffswitch-inner2:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #8585e0; color: #FFFFFF;
+}
+
+.onoffswitch-inner2:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #8585e0; color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+
+.onoffswitch-inner2:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch,
+.onoffswitch-switch2 {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox2:checked + .onoffswitch-label2 .onoffswitch-inner2 {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+.onoffswitch-checkbox2:checked + .onoffswitch-label2 .onoffswitch-switch2 {
+    right: 0px; 
 }
 
 /************ 
@@ -738,7 +878,7 @@ SIDE NAV
 
 
 .highlight:hover {
-  border-left: 2px solid orange;
+  border-left: 3px solid #83C891;
   background-color: grey;
 }
 
@@ -792,6 +932,10 @@ float: left;
 
 }
 
+.alert2 {
+  margin-bottom: 30px;
+}
+
 .date {
   padding-right: 20px;
 }
@@ -830,6 +974,13 @@ RECENT ACTIVITY
      margin-top: 74px;  
 }
 }
+
+@media only screen and (max-width: 764px) {
+
+ 
+  
+}
+
 
 @media screen and (min-width: 837px)  {
   .activitySvg {

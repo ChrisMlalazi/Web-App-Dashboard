@@ -1,5 +1,19 @@
 
 
+//TOGGLE BELL
+
+$('.bell').on('click', function(e) {
+  // Prevent link from jumping to the top of the page
+  e.preventDefault();
+  // If menu is already showing, slide it up. Otherwise, slide it down.
+  $('.toggled').toggleClass('slide-down');
+  //hide green dot
+   $('.dot').hide();
+});
+
+
+
+
 
 //USER SELECTS INDIVIDUAL  CHARTS AND MAKE THEM APPEAR AND DISAPPEAR
 

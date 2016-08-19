@@ -213,11 +213,5 @@ var myChart = new Chart(barChart, {
 
 
 
-/************
-
- DONUT CHART
-**************/
-
-
 
 

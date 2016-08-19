@@ -27,19 +27,19 @@
 
 	    <nav class="side_nav side_nav2 clearfix">
 			      <div class="highlight">
-				    	<a href="#" class="side_navList"><img src="icons/icon-dashboard.svg" alt="dashboard"></a>
+				    	<a href="#top" class="side_navList"><img src="icons/icon-dashboard.svg" alt="dashboard"></a>
 				  </div>
 
 					  <div class="highlight">
-					    	 <a href="#" class="side_navList"><img src="icons/icon-members.svg" alt="members"></a>
+					    	 <a href="#top2" class="side_navList"><img src="icons/icon-members.svg" alt="members"></a>
 			          </div>
 
 					  <div class="highlight">
-					    	<a href="#" class="side_navList"><img src="icons/icon-visits.svg" alt="visits"></a>		  
+					    	<a href="#top3" class="side_navList"><img src="icons/icon-visits.svg" alt="visits"></a>		  
 					  </div>
 
 				  <div class="highlight">	
-				       <a href="#" class="side_navList"><img src="icons/icon-settings.svg" alt="settings"></a>	    
+				       <a href="#top4" class="side_navList"><img src="icons/icon-settings.svg" alt="settings"></a>	    
 			      </div> <!-- highlight -->
 
 	    </nav> <!-- side_nav -->
@@ -47,6 +47,7 @@
 	    <div id="wrapper">
 	            <div class="dashboardWrapper">
 			    <div class="dash"><h2>Dashboard</h2></div>
+			    <a id="top"></a>
 			    <div class="searcher1">
 			        <form class="form1">
 			    	    <input type="text" id="search" name="search" placeholder="Search"><span class="fa fa-search"></span>
@@ -58,16 +59,27 @@
 				  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
 						 <p class="para"><strong>Alert! </strong> Dave likes your post: 'Techdegree rocks!'.</p>
 				</div>
-                 <div class="alert">
+                 <div class="alert alert2">
 					  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
 					  <p class="para"><strong>Alert! </strong>Litshe poked you.</p>
-					</div>                 
-					<div class="alert">
-						  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-						 <p class="para"><strong>Alert! </strong> Congrats you are now in Project 9.</p>
-					</div>
-
+					</div>    
 	     </div> 
+
+	     <div class="toggled">
+	         <div class="alert green">
+				  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+						 <p class="para">Charles Nkomo added a new photo.</p>
+				</div>
+                 <div class="alert green">
+					  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+					  <p class="para">Treehouse has 5 new posts.</p>
+					</div>                 
+					
+
+
+	     </div>
+
+
 
        
 
@@ -120,6 +132,7 @@
      <div class="socialWrapper">
 		     <div class="social">
 		            <h2>Social</h2> 
+		            <a id="top2"></a>
 		      </div> <!-- social -->
 	   <div class="socialBoxes">
 			       <div class="socialList">    
@@ -303,6 +316,7 @@
           <div class="newMembersWrapper clearfix">
            <div class="newMembers newMembers1"> 
              <h2>New Members</h2>
+             <a id="top3"></a>
              <table class="names">
 
 	              <tr class="details">
@@ -413,25 +427,28 @@
           <div id="settings">
 	          <form id="settingsForm">
 		          <h2>SETTINGS</h2>
+		          <a id="top4"></a>
 		          <div class="sendEmail">
 		           <p>Send Email Notifications</p>
-			           <div class="button1">
-			           <input type="checkbox" name="onOffButton" class="onOffSwitch" id="button1Switch">
-			           <label for="button1Switch" class="onOffLabel">
-			           	 <span class="button1Inner1"></span>
-				         <span class="button1Inner2"></span>
-			           </label>
-			           </div> <!-- button1 -->	
+			           <div class="onoffswitch">
+					    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+					    <label class="onoffswitch-label" for="myonoffswitch">
+					        <span class="onoffswitch-inner"></span>
+					        <span class="onoffswitch-switch"></span>
+					    </label>
+					</div>
+
 	              </div> <!-- sendEmail -->
 	              <div class="setProfile">
 		           <p>Set Profile To Public</p>
-			           <div class="button2">
-			           <input type="checkbox" name="onOffButton" class="onOffSwitch" id="button2Switch">
-				           <label for="button2Switch" class="onOffLabel">
-				           	   <span class="button2Inner1"></span>
-						       <span class="button2Inner2"></span>
-				           </label>
-			           </div> <!-- button2 -->	
+					   <div class="onoffswitch2">
+						    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox2" id="myonoffswitch2" checked>
+						        <label class="onoffswitch-label2" for="myonoffswitch2">
+						           <span class="onoffswitch-inner2"></span>
+						            <span class="onoffswitch-switch2"></span>
+						        </label>
+					    </div>
+
 	              </div> <!-- setProfile -->
 	              <div class="selectTimeZone">
 	                   <select id="selector">
