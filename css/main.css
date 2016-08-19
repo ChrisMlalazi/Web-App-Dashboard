@@ -10,6 +10,15 @@ body {
 }
 
 
+.icons {
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  clear: both;
+  background-color: grey;
+}
+
 
 .clearfix::after {
     content: "";
@@ -64,10 +73,6 @@ MAIN HEADER
   font-weight: 100;
   font-size: 1.35em;
   color: orange;
-}
-
-.sign {
-  font-weight: 100;
 }
 
 .header_nav {
@@ -475,8 +480,34 @@ td{
 
 .sign {
    color: #8585e0;
-   right: 15px;
+   right: 10px;
    font-size: 1.5em;
+    padding: 0;       
+}
+
+  th {
+    height: 86px;
+  }
+
+  .details img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 0;
+  }
+
+  .spanSvg{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  .activitySvg {
+      height: 30px;
+      width: 30px;
+      margin-left: 30px;
+      position: relative;
+      top: 10px;
 
   }
 
@@ -500,26 +531,25 @@ input[type="text"] {
     border-radius: 5px;
     margin: 15px 0; 
     border: 1px solid grey;
+    padding: 5px;
 }
 
-input[type="text"]:hover {
-  background-color: yellow;
-}
 
-textarea[type="text"] {
+textarea {
     font-size: 1.5em;
     width: 80%;
     height: 100px;
     border-radius: 5px;
     border: 1px solid grey;
     font-weight: 1em;
+    padding: 10px;
 }
 
 input[type="text"]:hover {
   background-color: #ffefd5;
 }
 
-textarea[type="text"]:hover {
+textarea:hover {
   background-color: #ffefd5;
 }
 
@@ -596,6 +626,14 @@ button {
   padding-top: 10px;
   border: none;
  
+}
+
+.saveButton:hover {
+  background-color: orange;
+}
+
+.cancelButton:hover {
+  background-color: orange;
 }
 
 /************ 
@@ -693,7 +731,6 @@ SIDE NAV
 }
 
 .newMembersWrapper {
-  color: green;
   clear: both;
 
 
@@ -717,7 +754,6 @@ float: left;
 }
 
 .date {
-  color: red;
   padding-right: 20px;
 }
 
@@ -736,10 +772,36 @@ float: left;
    border-left: 1px solid grey;
 }
 
+/*************
+RECENT ACTIVITY
+**************/
 
+.activitySvg {
+      height: 30px;
+      width: 20px;
+      margin-left: 5px;
+      position: relative;
+      top: 10px;
+
+      
+  }
+
+  .saveButton,
+  .cancelButton {
+     margin-top: 74px;  
+}
 }
 
+@media screen and (min-width: 837px)  {
+  .activitySvg {
+      height: 30px;
+      width: 40px;
+      margin-left: 25px;
+      position: relative;
+      top: 15px;      
+  }
 
+}
 
 
 
