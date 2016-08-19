@@ -89,7 +89,7 @@ html, body {
 
 #myChart {
   text-align: center;
-  background-color: white;
+  background-color: #ffffff;
 
 }
 
@@ -105,13 +105,13 @@ MAIN HEADER
   z-index: 2;
   width:100%;
   height: auto;
-  border-bottom: 1px solid orange;
+  border-bottom: 1px solid #ffa500;
   display: inline-block;
 }
 
 
 .header_logo {
-  color: white;
+  color: #ffffff;
   font-size: .8em;
   margin-left: 30px;
   float: left;
@@ -121,13 +121,13 @@ MAIN HEADER
 
 .sign1 {
   font-weight: 500;
-  color: white;
+  color: #ffffff;
 }
 
 .sign2 {
   font-weight: 100;
   font-size: 1.35em;
-  color: orange;
+  color: #ffa500;
 }
 
 .header_nav {
@@ -149,7 +149,7 @@ MAIN HEADER
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
   position: relative;
   top: 20px;
   margin-left: 10px;
@@ -182,7 +182,7 @@ MAIN HEADER
 }
 
 .name1 {
-  color: white;
+  color: #ffffff;
   margin-bottom: 20px;
   font-size: .8em;
 }
@@ -254,7 +254,7 @@ input[type="text"] {
     width: 80%;
     height: auto;
     font-size: 1.5em;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 4px;
     margin: 15px 0;
   
@@ -310,7 +310,7 @@ background-color: rgba(0,0,0,0.6);
 .closebtn {
     margin-left: 10px;
     margin-right: 10px;
-    color: white;
+    color: #ffffff;
     font-weight: bold;
     float: right;
     font-size: 22px;
@@ -324,7 +324,7 @@ background-color: rgba(0,0,0,0.6);
 }
 
 .alert p {
-  color: white;
+  color: #ffffff;
   font-size: .9em;
   padding: 10px;
 }
@@ -412,12 +412,16 @@ canvas {
 
 
 
-/**** DAILY TRAFFIC *****/
+/**** ALERT *****/
 
+.alert1 {
+  margin-bottom: 30px;
+}
 
+.alert2 {
+  margin-bottom: 40px;
+}
 
-
-/**** MOBILE USERS *****/
 
 
 
@@ -446,7 +450,6 @@ canvas {
   height: 40px;
   height: auto;
   margin-bottom: 10px;
-  padding-bottom: -40px;
   display: inline-block;
   list-style: none;
   transition: 0.3s;
@@ -474,10 +477,6 @@ SVG'S
 
 }
 
-.svgPath {
-  fill: #fff;
-
-}
 
 .twitterBackground {
   background-color: #8585e0;
@@ -535,7 +534,6 @@ td{
 
 .firstName {
    margin: 20px;   
-   font-weight: ;
 }
 
 .email {
@@ -613,7 +611,7 @@ input[type="text"] {
     width: 80%;
     height: auto;
     font-size: 1.5em;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 5px;
     margin: 15px 0; 
     border: 1px solid grey;
@@ -627,7 +625,6 @@ textarea {
     height: 100px;
     border-radius: 5px;
     border: 1px solid grey;
-    font-weight: 1em;
     padding: 10px;
 }
 
@@ -644,17 +641,18 @@ textarea:hover {
     width: 80%;
     border: 1px solid grey;
     border-radius: 10px;
+    margin-top: 50px;
     margin-bottom: 20px;
     padding: 10px;
 }
 
 .sendSpan {
     font-size: .9em;
-    color: white;
+    color: #ffffff;
 }
 
 #submitMessage:hover {
-    background-color: orange;
+    background-color: #ffa500;
     border-radius: 20px;
     border: 1px solid green;
 }
@@ -714,11 +712,11 @@ button {
 }
 
 .saveButton:hover {
-  background-color: orange;
+  background-color: #ffa500;
 }
 
 .cancelButton:hover {
-  background-color: orange;
+  background-color: #ffa500;
 }
 
 /*********
@@ -755,13 +753,13 @@ FLIP SWITCH
 }
 .onoffswitch-inner:before, .onoffswitch-inner:after {
     display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
-    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    font-size: 14px; color: #ffffff; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
     box-sizing: border-box;
 }
 
 .onoffswitch-inner2:before, .onoffswitch-inner2:after {
     display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
-    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    font-size: 14px; color: #ffffff; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
     box-sizing: border-box;
 }
 
@@ -857,7 +855,7 @@ SIDE NAV
     background-color: #5c5c8a;
     height: 100vh;
     width: 70px;
-    border-right: 2px solid orange;
+    border-right: 2px solid #ffa500;
     overflow: hidden;
     margin-top: -10px;
 
@@ -931,9 +929,12 @@ float: left;
   width: 50%;
 
 }
+.alert1 {
+  margin-bottom: 30px;
+}
 
 .alert2 {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .date {

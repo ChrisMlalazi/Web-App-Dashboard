@@ -183,17 +183,21 @@ var myChart = new Chart(barChart, {
 
 });   
 
+/********
+MOBILE
+********/
+
 
 var barChart = document.getElementById("donutChart");
 var myChart = new Chart(barChart, {
     type: "doughnut",
     data: {
-        labels: ["Phones", "Tablets", "Desktop"],
+        labels: ["Phones", "Tablets", "Desktop", "Ipod" ],
         datasets: [
             {
                 label: "[]",
-                data: [400, 100, 300],
-                backgroundColor: ["#74b1bf", "#81c98f", "#7377bf"],
+                data: [400, 100, 300, 150],
+                backgroundColor: ["#74b1bf", "#81c98f", "#7377bf", "#ffa500"],
                 borderWidth: 1,
                 borderColor: "grey",
             },          
@@ -209,7 +213,6 @@ var myChart = new Chart(barChart, {
     
 
 });
-
 
 
 
