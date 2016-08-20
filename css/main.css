@@ -846,6 +846,11 @@ FLIP SWITCH
     right: 0px; 
 }
 
+.creditWrap {
+  background-color: grey;
+  text-align: center;
+  color: white;
+}
 
 .credit {
   text-align: center;
@@ -855,7 +860,7 @@ FLIP SWITCH
 }
 
 .credit a {
-  color: black;
+  color: white;
 }
 
 .credit a:hover {
@@ -1039,7 +1044,14 @@ ul.ui-autocomplete {
   width: 85%;
   margin-top: 25px;
 }
-}
+
+ .creditWrap {
+
+  clear: both;
+  margin-top: -30px;
+ }
+
+
 
 @media only screen and (max-width: 764px) {
 
