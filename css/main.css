@@ -19,7 +19,29 @@ html, body {
   height: 100%;
 }
 
+#searched2 {
+   height: 45px;
+  color: #5c5c5c;
+  background: white;
+  padding-left: 5%;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
 
+/** remove bullted list from autocomplete ***/
+ul.ui-autocomplete {
+    list-style: none;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    background-color: red;
+    width: 40%;
+}
+
+.searched3 {
+  list-style: none;
+  background-color: red;
+}
 
 .bell {
   list-style: none;
@@ -605,6 +627,8 @@ td{
    
     text-align: center;
     display: block;
+    list-style: none;
+
 }
 
 input[type="text"] {
@@ -616,6 +640,7 @@ input[type="text"] {
     margin: 15px 0; 
     border: 1px solid grey;
     padding: 5px;
+
 }
 
 
@@ -643,8 +668,9 @@ textarea:hover {
     border-radius: 10px;
     margin-top: 50px;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 20px;
 }
+
 
 .sendSpan {
     font-size: .9em;
@@ -675,7 +701,6 @@ textarea:hover {
 
 .sendEmail p,
 .setProfile p {
- /* color: red;*/
   font-size: .9em;
   display: inline-block;
   position: relative;
@@ -709,6 +734,10 @@ button {
   padding-top: 10px;
   border: none;
  
+}
+
+#send {
+  width: 85%;
 }
 
 .saveButton:hover {
@@ -973,6 +1002,22 @@ RECENT ACTIVITY
   .saveButton,
   .cancelButton {
      margin-top: 74px;  
+}
+
+/** remove bullted list from autocomplete ***/
+ul.ui-autocomplete {
+    list-style: none;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    width: 35%;
+}
+
+#send {
+  width: 85%;
+  margin-top: 25px;
 }
 }
 

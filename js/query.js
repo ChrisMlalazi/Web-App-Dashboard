@@ -1,5 +1,4 @@
 
-
 //TOGGLE BELL
 
 $('.bell').on('click', function(e) {
@@ -44,5 +43,37 @@ $('.hamburger').on('click', function(e) {
   // If menu is already showing, slide it up. Otherwise, slide it down.
   $('.highlight').toggleClass('slide-down');
 });
+
+
+
+var $submitMessage = $(document.getElementById("send"));
+
+$submitMessage.click(function () {
+    if (document.getElementById("comments").value === "") {
+        $("#warning").text("Please enter a message");
+    } else if ($("#searched2").val() === "") {
+        $("#warning").text("Please select a user");
+    } else {
+        $("#warning").text("Your message has been sent");
+    }
+});
+
+
+
+//autocomplete
+$(function () {
+    var availableTags = [
+        "Nonhlalo Dube",
+        "Ishmael Singo",
+        "Simon Phiri",
+        "Charles Nkomo",
+        "Litshe Muvingi"
+    ];
+    $(".searched3").autocomplete({
+        source: availableTags
+    });
+});
+
+
 
 

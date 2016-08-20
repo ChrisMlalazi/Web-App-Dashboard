@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/main.css" media="screen" type="text/css">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
   <body>
   
@@ -415,11 +416,11 @@
                <div class="searcher2">
 
                 
-                 <form class="form2">
-	          	     <input type="text" id="search2" name="text" placeholder="Search for User">
-		          	     <textarea id="comments" placeholder="Message for User"></textarea>
-          	                 
-          	          <button type="button" id="submitMessage"><span class="sendSpan">Submit</span></button>
+                 <form class="form2" id="sendMessage">
+	          	     <input type="text" id="searched2" class="searched3" name="text" placeholder="Search for User">
+		          	     <textarea id="comments" placeholder="Message for User" class="sendMessage"></textarea>
+          	                 <p id="warning"></p>
+          	          <button type="button" id="send"><span class="sendSpan">Submit</span></button>
           	     </form>
           </div> <!-- searcher2 -->
           </div>
@@ -556,6 +557,10 @@
 	 <script src="js/chart.min.js"></script>
      <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
      <script src="js/query.js" type="text/javascript" charset="utf-8"></script>
+     <!-- addition -->
+
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  
      
      </body>
   </html>
