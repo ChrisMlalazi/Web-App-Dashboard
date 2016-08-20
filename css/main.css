@@ -9,6 +9,10 @@ body {
   background-color: #f0ffff;
 }
 
+a {
+  text-decoration: none;
+}
+
 .clearfix:after {
   content: "";
   display: table;
@@ -840,6 +844,22 @@ FLIP SWITCH
 
 .onoffswitch-checkbox2:checked + .onoffswitch-label2 .onoffswitch-switch2 {
     right: 0px; 
+}
+
+
+.credit {
+  text-align: center;
+  font-size: .8em;
+  margin-bottom: 10px;
+
+}
+
+.credit a {
+  color: black;
+}
+
+.credit a:hover {
+  color: orange;
 }
 
 /************ 
